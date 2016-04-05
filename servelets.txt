@@ -1,0 +1,5 @@
+new otros, web servlet
+
+1) procesos --> servlets (.do)
+2) vistas  html ---> jsp - servlets (.view)
+3) modelos de datos clases quenos permite trabajar con datos de la base de datos o por los ingresados. --> clases de java normales
