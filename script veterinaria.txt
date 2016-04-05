@@ -1,0 +1,45 @@
+drop table inacap.MASCOTAS;
+drop table inacap.VETERINARIO;
+drop table inacap.listaantenciones;
+
+create table mascota
+( 
+id bigint constraint PK_MASCOTA primary key generated always as identity,
+idenfermedad bigint,
+nombre varchar(50),
+raza varchar(50),
+sexo char(1),
+tratamiento varchar(5000)
+fecha timestamp default current_timestamp 
+);
+
+create table veterinario
+(
+    id bigint constraint PK_VETERINARIO primary key generated always as identity,
+nombre varchar(50),
+apellido varchar(50),
+edad smallint,
+sexo char(1)
+fecha timestamp default current_timestamp 
+);
+
+create table listaatenciones
+( id bigint constraint PK_LISTAATENCIONES primary key generated always as identity,
+  idmascota bigint,
+  idmedico bigint,
+ fecha timestamp default current_timestamp
+);
+
+insert into inacap.veterinario (nombre,apellido,edad,sexo) values
+('Paola','Guzman', 38, 'F'),
+('Ricardo','Aldunate', 45, 'M'),
+('Esteban','Plaza', 29, 'M'),
+('Rodolfo','Garcia', 55, 'M');
+
+insert into inacap.MASCOTA (nombre, raza, sexo) values
+('Cachupin','Quiltro','M'),
+('Rintintin','Yorkshire','M'),
+('Lassie','Collie','M'),
+('copito','Quiltro','M'),
+('Muñeca','poodle','F'),
+('Blanca','Quiltro','F');
