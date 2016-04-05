@@ -1,0 +1,5 @@
+System.err.println("Mono de giro mayor al saldo");
+return false;
+
+DAO , se puede sacar de cualquier parte de informacion, no solamente de una base de datos, es una 4 capa, se asegura de
+que funcione sin importar los datos que se tengan.
