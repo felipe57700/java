@@ -1,0 +1,12 @@
+SMAP
+EliminarPaciente_jsp.java
+JSP
+*S JSP
+*F
++ 0 EliminarPaciente.jsp
+Paciente/EliminarPaciente.jsp
+*L
+1,2:45
+4,24:48
+27,19:72
+*E
